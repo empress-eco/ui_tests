@@ -1,47 +1,83 @@
-## ERPNext UI Tests
+<div align="center">
+  <img src="https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png" alt="ui_tests Logo"/>
+  <h1 align="center">ui_tests: Streamline Your UI Testing Process</h1>
+  <p align="center">
+    A powerful tool for conducting systematic UI tests using Cypress in a seamless manner.
+    <br />
+    <a href="https://empress.eco/">Visit our Website</a>
+    ·
+    <a href="https://grow.empress.eco/">Documentation</a>
+    ·
+    <a href="https://github.com/empress-eco/ui_tests/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/empress-eco/ui_tests/issues">Request Feature</a>
+  </p>
+</div>
 
-[![UI](https://github.com/erpnext/erpnext_ui_tests/actions/workflows/ui-tests.yml/badge.svg?branch=develop&event=schedule)](https://github.com/erpnext/erpnext_ui_tests/actions/workflows/ui-tests.yml)
-[![UI Coverage](https://codecov.io/gh/erpnext/erpnext_ui_tests/branch/develop/graph/badge.svg?token=Y3X3T1Y04O)](https://codecov.io/gh/erpnext/erpnext_ui_tests)
+## About ui_tests
 
-This repository contains Integration tests for ERPNext features written in Cypress. These tests are run on GitHub Actions via cron every day.
+ui_tests is a robust repository tool designed to facilitate comprehensive integration tests for UI features primarily using Cypress. This tool is specially tailored for developers aiming to seamlessly implement daily UI tests via GitHub actions.
 
-## Local Setup
+### Key Features
+- Performs seamless integration tests for UI features.
+- Daily automatic test runs on GitHub Actions via cron.
+- Comprehensive coverage and continuous integration for your UI tests.
 
-> Prerequisites: [Install and setup Frappe Framework](https://frappeframework.com/docs/v13/user/en/installation)
+### Built With
+The significant framework used in the project is [Cypress](https://www.cypress.io/).
 
-Follow these steps to set this up on your local machine:
-1. Change directory into `frappe-bench`
-   ```sh
-   # replace ~/frappe-bench with the path where you have installed frappe-bench
+## Getting Started
 
-   cd ~/frappe-bench
-   ```
+### Prerequisites
+Before setting up ui_tests on your local machine, ensure that you have the Framework installed and set up. If not, you can follow the instructions [here](https://Empressframework.com/docs/v13/user/en/installation) to get it done.
 
-1. Fetch `erpnext` and `erpnext_ui_tests` (this app) on your `frappe-bench` installation
-   ```sh
-   bench get-app erpnext
-   bench get-app erpnext_ui_tests
-   ```
+### Installation
+To set up ui_tests on your local machine, clone the repository using the following command:
 
-1. Create a new site and install these apps
-   ```sh
-   bench new-site erpnextui.test --install-app erpnext erpnext_ui_tests
-   ```
+```sh
+git clone https://github.com/empress-eco/ui_tests.git
+```
 
-1. Add to hosts so that the site is accessible via hostname on the browser
-   ```sh
-   bench --site erpnextui.test add-to-hosts
-   ```
+Then, follow the steps below:
 
-1. Complete setup wizard by running this command
-   ```sh
-   bench --site erpnextui.test execute erpnext.setup.utils.before_tests
-   ```
+```sh
+# Change directory into `Empress-bench`
+cd ~/Empress-bench
 
-1. Run the following command to open up the Cypress runner
-   ```sh
-   bench --site erpnextui.test run-ui-tests erpnext_ui_tests
-   ```
-#### License
+# Fetch `Empress` and `Empress_ui_tests` on your `Empress-bench` installation
+bench get-app Empress
+bench get-app Empress_ui_tests
 
-GPL-v3.0
+# Create a new site and install these apps
+bench new-site Empressui.test --install-app Empress Empress_ui_tests
+
+# Add to hosts so that the site is accessible via hostname on the browser
+bench --site Empressui.test add-to-hosts
+
+# Complete setup wizard by running this command
+bench --site Empressui.test execute Empress.setup.utils.before_tests
+
+# Run the following command to open up the Cypress runner
+bench --site Empressui.test run-ui-tests Empress_ui_tests
+```
+
+### Usage
+After the installation, execute the Cypress runner to conduct comprehensive UI tests on your applications.
+
+## Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated. Here's how you can contribute:
+
+- Fork the Project
+- Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+- Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+- Push to the Branch (`git push origin feature/AmazingFeature`)
+- Open a Pull Request
+
+## License and Acknowledgements
+
+### License
+This project is under the MIT License. Your contributions are also licensed under the MIT License.
+
+### Acknowledgements
+Special thanks to the Empress Community, the architects behind the essential tools that power this project. Their innovation and dedication have been instrumental in building the foundations and functionalities we rely on. We are profoundly grateful for their pioneering work and ongoing support.
+```
